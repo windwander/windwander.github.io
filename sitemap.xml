@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2014-08-03/Global-CSS/</loc>
+    <lastmod>2014-08-05T07:01:30.000Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2014-08-04/GRUB2-Rescue-%E6%A8%A1%E5%BC%8F%E6%97%B6%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BC%80%E6%9C%BA%E5%91%BD%E4%BB%A4/</loc>
     <lastmod>2014-08-04T16:12:38.000Z</lastmod>
   </url>
@@ -19,11 +24,6 @@
   <url>
     <loc>http://yoursite.com/2014-08-04/Talk-Me-Down/</loc>
     <lastmod>2014-08-04T09:31:54.000Z</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2014-08-03/Global-CSS/</loc>
-    <lastmod>2014-08-03T10:20:34.000Z</lastmod>
   </url>
   
   <url>
