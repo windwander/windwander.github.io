@@ -87,29 +87,22 @@
 
 <p><em>以下各命令列，均是启动 Linux 操作系统</em><br><em>以下各命令列，输完每一行都按下 <code>Enter</code></em><br><em>输入命令或路径时，可以按下 <code>Tab</code> 来补全</em><br><em>注意在救援模式时，即提示符为 <code>grub-rescue&gt;</code> 时，需要载入 linux 模组，否则会提示“Unknown command linux”</em></p>
 <h2 id="首先查看下当前的_Grub2_设定：">首先查看下当前的 Grub2 设定：</h2>
-<pre><code class="grub">set    # 仅输入 set 而不加设置对象时，此命令显示当前的 Grub2 设置
-ls    # 使用 ls 来查看 Grub2 所认出的装置。例如：(hd0) = sda; (hd0,1)=sda1; (hd0,msdos2)=sda2
-</code></pre>
+<figure class="highlight grub"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">set</span>    # 仅输入 <span class="keyword">set</span> 而不加设置对象时，此命令显示当前的 Grub2 设置</div><div class="line"><span class="keyword">ls</span>    # 使用 <span class="keyword">ls</span> 来查看 Grub2 所认出的装置。例如：(hd0) = sda; (hd0,<span class="number">1</span>)=sda1; (hd0,msdos2)=sda2</div></pre></td></tr></table></figure>
+
+
+
 <h2 id="以最近的核心快速开机：">以最近的核心快速开机：</h2>
-<pre><code class="grub">set root=(hdX,Y)    # 输入来自 ls 指令查出的正确的 X,Y 值，例如：set root=(hd0,msdos1)
-insmod /boot/grub/linux.mod    # 该行命令仅在提示符为 grub-rescue&gt; 时需要,用于载入 linux 模组，若没有载入此模组，将会提示 “Unknown command linux”
-linux /vmlinuz root=/dev/sdXY ro   # 接上例，linux /vmlinuz root=/dev/sda1 ro
-initrd /initrd.img    # 选择最新的 initrd 镜像
-boot    # 以上都成功设定好以后，输入 boot 启动该操作系统
-</code></pre>
+<figure class="highlight grub"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">set root=(hdX,<span class="constant">Y</span>)    <span class="comment"># 输入来自 ls 指令查出的正确的 X,Y 值，例如：set root=(hd0,msdos1)</span></div><div class="line"><span class="input"><span class="prompt">insmod /boot/grub/linux.mod    # 该行命令仅在提示符为 grub-rescue&gt;</span> 时需要,用于载入 linux 模组，若没有载入此模组，将会提示 “<span class="constant">Unknown</span> command linux”</span></div><div class="line">linux /vmlinuz root=<span class="regexp">/dev/sd</span>XY ro   <span class="comment"># 接上例，linux /vmlinuz root=/dev/sda1 ro</span></div><div class="line">initrd /initrd.img    <span class="comment"># 选择最新的 initrd 镜像</span></div><div class="line">boot    <span class="comment"># 以上都成功设定好以后，输入 boot 启动该操作系统</span></div></pre></td></tr></table></figure>
+
 <h2 id="手动开机至指定核心：">手动开机至指定核心：</h2>
-<pre><code class="grub">set root=(hdX,Y)    # 输入来自 ls 指令查出的正确的 X,Y 值，例如：set root=(hd0,msdos1)
-insmod /boot/grub/linux.mod    # 该行命令仅在提示符为 grub-rescue&gt; 时需要,用于载入 linux 模组，若没有载入此模组，将会提示 “Unknown command linux”
-linux /boot/vmlinuz-3.2.0-67-generic root=/dev/sda1 ro    # 该行命令由四部分组成：1.linux 2.kernel 3.root 4.ro； 在输入 kernel 时，可以先输到 /boot/vml 的“l”然后紧接着按下 Tab 键来自动补全 kernel 的路径； root的路径对应上一步骤：root=/dev/sda1；最后输入的 ro 为加入的选项
-initrd /boot/initrd.img-3.2.0-67-generic    # 选择 initrd 镜像，同样在输入路径时，可以输到 /boot/ini 的“i”后，紧接着按下 Tab 来补全路径
-boot    # 以上都成功设定好以后，输入 boot 启动该操作系统
-</code></pre>
+<figure class="highlight grub"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="type">set</span> root=(hdX,Y)    <span class="comment"># 输入来自 ls 指令查出的正确的 X,Y 值，例如：set root=(hd0,msdos1)</span></div><div class="line">insmod /boot/grub/linux.<span class="keyword">mod</span>    <span class="comment"># 该行命令仅在提示符为 grub-rescue&gt; 时需要,用于载入 linux 模组，若没有载入此模组，将会提示 “Unknown command linux”</span></div><div class="line">linux /boot/vmlinuz-<span class="number">3</span>.<span class="number">2</span>.<span class="number">0</span>-<span class="number">67</span>-<span class="keyword">generic</span> root=/dev/sda1 ro    <span class="comment"># 该行命令由四部分组成：1.linux 2.kernel 3.root 4.ro； 在输入 kernel 时，可以先输到 /boot/vml 的“l”然后紧接着按下 Tab 键来自动补全 kernel 的路径； root的路径对应上一步骤：root=/dev/sda1；最后输入的 ro 为加入的选项</span></div><div class="line">initrd /boot/initrd.img-<span class="number">3</span>.<span class="number">2</span>.<span class="number">0</span>-<span class="number">67</span>-<span class="keyword">generic</span>    <span class="comment"># 选择 initrd 镜像，同样在输入路径时，可以输到 /boot/ini 的“i”后，紧接着按下 Tab 来补全路径</span></div><div class="line">boot    <span class="comment"># 以上都成功设定好以后，输入 boot 启动该操作系统</span></div></pre></td></tr></table></figure>
+
 <p>参考链接：<a href="http://wiki.ubuntu-tw.org/index.php?title=Grub2" target="_blank" rel="external">GRUB 2 中文指南</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014-08-04/GRUB2-Rescue-模式时使用的开机命令/" data-id="ac9w4won31e26l4y" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014-08-04/GRUB2-Rescue-模式时使用的开机命令/" data-id="4u2wh00k31dpxlss" class="article-share-link">Share</a>
       
         <a href="http://yoursite.com/2014-08-04/GRUB2-Rescue-模式时使用的开机命令/#disqus_thread" class="article-comment-link">Comments</a>
       
