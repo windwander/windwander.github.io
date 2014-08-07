@@ -108,11 +108,16 @@
 <figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="regexp">/dev/</span>sda5  <span class="regexp">/media/</span>Documents  ntfs-<span class="number">3</span>g     defaults,locale=zh_CN.UTF-<span class="number">8</span>  <span class="number">0</span> <span class="number">0</span></div><div class="line"><span class="regexp">/dev/</span>sda6  <span class="regexp">/media/</span>Musics  ntfs-<span class="number">3</span>g     defaults,locale=zh_CN.UTF-<span class="number">8</span>  <span class="number">0</span> <span class="number">0</span></div><div class="line"><span class="regexp">/dev/</span>sda7  <span class="regexp">/media/</span>Videos  ntfs-<span class="number">3</span>g     defaults,locale=zh_CN.UTF-<span class="number">8</span>  <span class="number">0</span> <span class="number">0</span></div></pre></td></tr></table></figure>
 
 
+<h2 id="4-_关闭Apache2、MySQL等开机自启动服务">4. 关闭Apache2、MySQL等开机自启动服务</h2>
+<p>一些服务可以安装 <code>sysv-rc-conf</code> ，来进行配置是否开机自启动，比如 <code>apache2</code> 。<br>另一些则需要手动修改其配置文件，例如：<code>mysql</code> 。用编辑器打开 <code>/etc/init/mysql.conf</code> ：</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">start <span class="function_start"><span class="keyword">on</span></span> runlevel [<span class="number">2345</span>]    <span class="comment"># 可以直接在此处将不想自启动的 runlevel 删除</span></div><div class="line"><span class="comment"># 例如，不想让其在 runlevel 2 时启动，将上一行 [] 内改为 [345] ，即删除 2 </span></div><div class="line">stop <span class="function_start"><span class="keyword">on</span></span> starting rc RUNLEVEL=[<span class="number">016</span>]    <span class="comment"># 或是将其添加至此处</span></div><div class="line"><span class="comment"># 例如，不想让其在 runlevel 2 时启动，将上一行 [] 内改为 [0126] ，即添加 2 </span></div><div class="line"><span class="comment">## 以上只需选一种即可，也可两行都修改  ##</span></div></pre></td></tr></table></figure>
+
+<p>而自行启动这些服务时，可以使用 <code>service</code> 命令进行启动。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2014-08-04/Linux-安装配置/" data-id="9kk4x15o6328r8zd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2014-08-04/Linux-安装配置/" data-id="62wxp7bfnxm0e0ir" class="article-share-link">Share</a>
       
         <a href="http://yoursite.com/2014-08-04/Linux-安装配置/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -222,7 +227,7 @@
   
   <div class="outer">
     <div id="footer-info" class="inner">
-      &copy; 2014 Zhu JiYou<br>
+      &copy; 2014 Zhu Jiyou<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
