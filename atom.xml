@@ -3,9 +3,9 @@
   <title><![CDATA[Breeze]]></title>
   
   <link href="/atom.xml" rel="self"/>
-  <link href="http://yoursite.com/"/>
-  <updated>2014-08-07T04:22:38.526Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://windwander.github.io//"/>
+  <updated>2014-08-07T06:42:57.725Z</updated>
+  <id>http://windwander.github.io//</id>
   
   <author>
     <name><![CDATA[Zhu Jiyou]]></name>
@@ -16,8 +16,8 @@
   
   <entry>
     <title><![CDATA[GRUB2 Rescue 模式时使用的开机命令]]></title>
-    <link href="http://yoursite.com/2014-08-04/GRUB2-Rescue-%E6%A8%A1%E5%BC%8F%E6%97%B6%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BC%80%E6%9C%BA%E5%91%BD%E4%BB%A4/"/>
-    <id>http://yoursite.com/2014-08-04/GRUB2-Rescue-模式时使用的开机命令/</id>
+    <link href="http://windwander.github.io/2014-08-04/GRUB2-Rescue-%E6%A8%A1%E5%BC%8F%E6%97%B6%E4%BD%BF%E7%94%A8%E7%9A%84%E5%BC%80%E6%9C%BA%E5%91%BD%E4%BB%A4/"/>
+    <id>http://windwander.github.io/2014-08-04/GRUB2-Rescue-模式时使用的开机命令/</id>
     <published>2014-08-04T14:24:05.000Z</published>
     <updated>2014-08-06T04:23:16.000Z</updated>
     <content type="html"><![CDATA[<p>使用 Grub2 作为开机选单时，若设置错误或安装失败，而在开机时不显示启动选单，而是显示 <code>grub-rescue&gt;</code> 这一提示符。那就需要使用者手动输入开机命令来启动操作系统。<br>或者 Grub2 选单正常时，也可以按照屏幕下方的提示，按下 <code>c</code> 来进入命令列模式，此时可以看到 <code>grub&gt;</code> 提示符。</p>
@@ -40,16 +40,16 @@
     <summary type="html"><![CDATA[<p>使用 Grub2 作为开机选单时，若设置错误或安装失败，而在开机时不显示启动选单，而是显示 <code>grub-rescue&gt;</code> 这一提示符。那就需要使用者手动输入开机命令来启动操作系统。<br>或者 Grub2 选单正常时，也可以按照屏幕下方的提示，按下 <code>c</code> 来进入命令列模式，此时可以看到 <code>grub&gt;</code> 提示符。</p>
 ]]></summary>
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="http://windwander.github.io/tags/Linux/"/>
     
-      <category term="Grub" scheme="http://yoursite.com/tags/Grub/"/>
+      <category term="Grub" scheme="http://windwander.github.io/tags/Grub/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Linux 安装配置]]></title>
-    <link href="http://yoursite.com/2014-08-04/Linux-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-    <id>http://yoursite.com/2014-08-04/Linux-安装配置/</id>
+    <link href="http://windwander.github.io/2014-08-04/Linux-%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
+    <id>http://windwander.github.io/2014-08-04/Linux-安装配置/</id>
     <published>2014-08-04T10:23:09.000Z</published>
     <updated>2014-08-06T05:06:01.000Z</updated>
     <content type="html"><![CDATA[<p>记录下Linux操作系统的安装配置。<br><a id="more"></a></p>
@@ -74,16 +74,16 @@
 ]]></content>
     <summary type="html"><![CDATA[<p>记录下Linux操作系统的安装配置。<br>]]></summary>
     
-      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+      <category term="Linux" scheme="http://windwander.github.io/tags/Linux/"/>
     
-      <category term="OS" scheme="http://yoursite.com/tags/OS/"/>
+      <category term="OS" scheme="http://windwander.github.io/tags/OS/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Sticky footer styles]]></title>
-    <link href="http://yoursite.com/2014-08-04/Sticky-footer-styles/"/>
-    <id>http://yoursite.com/2014-08-04/Sticky-footer-styles/</id>
+    <link href="http://windwander.github.io/2014-08-04/Sticky-footer-styles/"/>
+    <id>http://windwander.github.io/2014-08-04/Sticky-footer-styles/</id>
     <published>2014-08-04T09:38:26.000Z</published>
     <updated>2014-08-04T10:15:40.000Z</updated>
     <content type="html"><![CDATA[<p>页脚一般都放在页面底部，但有时页面中部内容过少，导致在页脚后还产生空白，显得页面较难看。利用以下方式，给页面主要内容加上负边距，可使页脚始终固定在页面底部。</p>
@@ -99,16 +99,16 @@
     <summary type="html"><![CDATA[<p>页脚一般都放在页面底部，但有时页面中部内容过少，导致在页脚后还产生空白，显得页面较难看。利用以下方式，给页面主要内容加上负边距，可使页脚始终固定在页面底部。</p>
 ]]></summary>
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+      <category term="CSS" scheme="http://windwander.github.io/tags/CSS/"/>
     
-      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+      <category term="Web" scheme="http://windwander.github.io/tags/Web/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Talk Me Down]]></title>
-    <link href="http://yoursite.com/2014-08-04/Talk-Me-Down/"/>
-    <id>http://yoursite.com/2014-08-04/Talk-Me-Down/</id>
+    <link href="http://windwander.github.io/2014-08-04/Talk-Me-Down/"/>
+    <id>http://windwander.github.io/2014-08-04/Talk-Me-Down/</id>
     <published>2014-08-04T08:02:08.000Z</published>
     <updated>2014-08-04T09:31:54.000Z</updated>
     <content type="html"><![CDATA[<p><a id="more"></a><br><img src="/img/westlife-where-we-are.jpg" alt="Westlife - Where We Are"></p>
@@ -116,18 +116,18 @@
 ]]></content>
     <summary type="html"><![CDATA[<p>]]></summary>
     
-      <category term="Music" scheme="http://yoursite.com/tags/Music/"/>
+      <category term="Music" scheme="http://windwander.github.io/tags/Music/"/>
     
-      <category term="Westlife" scheme="http://yoursite.com/tags/Westlife/"/>
+      <category term="Westlife" scheme="http://windwander.github.io/tags/Westlife/"/>
     
-      <category term="Mark Feehily" scheme="http://yoursite.com/tags/Mark-Feehily/"/>
+      <category term="Mark Feehily" scheme="http://windwander.github.io/tags/Mark-Feehily/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Global CSS]]></title>
-    <link href="http://yoursite.com/2014-08-03/Global-CSS/"/>
-    <id>http://yoursite.com/2014-08-03/Global-CSS/</id>
+    <link href="http://windwander.github.io/2014-08-03/Global-CSS/"/>
+    <id>http://windwander.github.io/2014-08-03/Global-CSS/</id>
     <published>2014-08-03T08:56:59.000Z</published>
     <updated>2014-08-05T07:13:32.000Z</updated>
     <content type="html"><![CDATA[<p>由于各浏览器都有自身默认的样式，且不同浏览器的默认样式会有些不同。为了方便起见，在写CSS时，首先会使用CSS Reset清除浏览器的默认样式，以避免浏览器默认样式的干扰。而网页的整体风格的样式，比如：将页面中的a元素全部不加下划线（即：a{text-decoration: none;}），也会在CSS文件的开头。因而可以将CSS Reset修改并加上网页整体风格的样式，构成Global CSS。这份Global CSS将是网站中直接使用的CSS，一般放在整个CSS文件开头，或单独作为一个CSS文件引入。</p>
@@ -147,16 +147,16 @@
     <summary type="html"><![CDATA[<p>由于各浏览器都有自身默认的样式，且不同浏览器的默认样式会有些不同。为了方便起见，在写CSS时，首先会使用CSS Reset清除浏览器的默认样式，以避免浏览器默认样式的干扰。而网页的整体风格的样式，比如：将页面中的a元素全部不加下划线（即：a{text-decoration: none;}），也会在CSS文件的开头。因而可以将CSS Reset修改并加上网页整体风格的样式，构成Global CSS。这份Global CSS将是网站中直接使用的CSS，一般放在整个CSS文件开头，或单独作为一个CSS文件引入。</p>
 ]]></summary>
     
-      <category term="CSS" scheme="http://yoursite.com/tags/CSS/"/>
+      <category term="CSS" scheme="http://windwander.github.io/tags/CSS/"/>
     
-      <category term="Web" scheme="http://yoursite.com/tags/Web/"/>
+      <category term="Web" scheme="http://windwander.github.io/tags/Web/"/>
     
   </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <link href="http://yoursite.com/2014-02-27/hello-world/"/>
-    <id>http://yoursite.com/2014-02-27/hello-world/</id>
+    <link href="http://windwander.github.io/2014-02-27/hello-world/"/>
+    <id>http://windwander.github.io/2014-02-27/hello-world/</id>
     <published>2014-02-27T10:30:00.000Z</published>
     <updated>2014-08-06T04:25:47.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to My Blog! </p>
